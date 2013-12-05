@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Sorry</key>
+	<dict>
+		<key>T</key>
+		<string>ข้ออภัย</string>
+		<key>E</key>
+		<string>Sorry</string>
+	</dict>
+	<key>ForgetPassword</key>
+	<dict>
+		<key>T</key>
+		<string>ลืมรหัสผ่าน</string>
+		<key>E</key>
+		<string>Forget Password</string>
+	</dict>
+	<key>LoginIdCard</key>
+	<dict>
+		<key>T</key>
+		<string>กรุณากรอกเลขประจำตัวประจำตัวประชาชน 13 หลัก</string>
+		<key>E</key>
+		<string>Login</string>
+	</dict>
+	<key>Login</key>
+	<dict>
+		<key>T</key>
+		<string>เข้าสู่ระบบ</string>
+		<key>E</key>
+		<string>Login</string>
+	</dict>
+</dict>
+</plist>

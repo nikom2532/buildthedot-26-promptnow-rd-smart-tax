@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2DBFDD0184F8C8700565438 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DBFDCF184F8C8700565438 /* Foundation.framework */; };
+		F2DBFDD2184F8C8700565438 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DBFDD1184F8C8700565438 /* CoreGraphics.framework */; };
+		F2DBFDD4184F8C8700565438 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DBFDD3184F8C8700565438 /* UIKit.framework */; };
+		F2DBFDDA184F8C8700565438 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFDD8184F8C8700565438 /* InfoPlist.strings */; };
+		F2DBFDDC184F8C8700565438 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFDDB184F8C8700565438 /* main.m */; };
+		F2DBFDE0184F8C8700565438 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFDDF184F8C8700565438 /* AppDelegate.m */; };
+		F2DBFDE2184F8C8700565438 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFDE1184F8C8700565438 /* Images.xcassets */; };
+		F2DBFDE9184F8C8700565438 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DBFDE8184F8C8700565438 /* XCTest.framework */; };
+		F2DBFDEA184F8C8700565438 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DBFDCF184F8C8700565438 /* Foundation.framework */; };
+		F2DBFDEB184F8C8700565438 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DBFDD3184F8C8700565438 /* UIKit.framework */; };
+		F2DBFDF3184F8C8700565438 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFDF1184F8C8700565438 /* InfoPlist.strings */; };
+		F2DBFDF5184F8C8700565438 /* RDSmartTaxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFDF4184F8C8700565438 /* RDSmartTaxTests.m */; };
+		F2DBFE06184F8CE200565438 /* ENCheckNewUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE03184F8CE200565438 /* ENCheckNewUserService.m */; };
+		F2DBFE07184F8CE200565438 /* ENAuthenService.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE05184F8CE200565438 /* ENAuthenService.m */; };
+		F2DBFE0C184F8D0400565438 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE0A184F8D0400565438 /* correct.png */; };
+		F2DBFE0D184F8D0400565438 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE0A184F8D0400565438 /* correct.png */; };
+		F2DBFE0E184F8D0400565438 /* wrong.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE0B184F8D0400565438 /* wrong.png */; };
+		F2DBFE0F184F8D0400565438 /* wrong.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE0B184F8D0400565438 /* wrong.png */; };
+		F2DBFE14184F8D2B00565438 /* ShareUserDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE13184F8D2B00565438 /* ShareUserDetail.m */; };
+		F2DBFE15184F8D2B00565438 /* ShareUserDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE13184F8D2B00565438 /* ShareUserDetail.m */; };
+		F2DBFE19184F8D3A00565438 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE18184F8D3A00565438 /* KeyboardViewController.m */; };
+		F2DBFE1A184F8D3A00565438 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE18184F8D3A00565438 /* KeyboardViewController.m */; };
+		F2DBFE1D184F8D4300565438 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE1C184F8D4300565438 /* Util.m */; };
+		F2DBFE1E184F8D4300565438 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE1C184F8D4300565438 /* Util.m */; };
+		F2DBFE26184F8D5100565438 /* FontUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE21184F8D5100565438 /* FontUtil.m */; };
+		F2DBFE27184F8D5100565438 /* FontUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE21184F8D5100565438 /* FontUtil.m */; };
+		F2DBFE28184F8D5100565438 /* TextfieldUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE23184F8D5100565438 /* TextfieldUtil.m */; };
+		F2DBFE29184F8D5100565438 /* TextfieldUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE23184F8D5100565438 /* TextfieldUtil.m */; };
+		F2DBFE2A184F8D5100565438 /* TextFormatterUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE25184F8D5100565438 /* TextFormatterUtil.m */; };
+		F2DBFE2B184F8D5100565438 /* TextFormatterUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE25184F8D5100565438 /* TextFormatterUtil.m */; };
+		F2DBFE31184F8D9100565438 /* PSL-Kittithada.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE2D184F8D9100565438 /* PSL-Kittithada.ttf */; };
+		F2DBFE32184F8D9100565438 /* PSL-Kittithada.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE2D184F8D9100565438 /* PSL-Kittithada.ttf */; };
+		F2DBFE33184F8D9100565438 /* PSL-KittithadaBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE2E184F8D9100565438 /* PSL-KittithadaBold.ttf */; };
+		F2DBFE34184F8D9100565438 /* PSL-KittithadaBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE2E184F8D9100565438 /* PSL-KittithadaBold.ttf */; };
+		F2DBFE35184F8D9100565438 /* PSL-KittithadaItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE2F184F8D9100565438 /* PSL-KittithadaItalic.ttf */; };
+		F2DBFE36184F8D9100565438 /* PSL-KittithadaItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE2F184F8D9100565438 /* PSL-KittithadaItalic.ttf */; };
+		F2DBFE37184F8D9100565438 /* PSL-KittithadaBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE30184F8D9100565438 /* PSL-KittithadaBoldItalic.ttf */; };
+		F2DBFE38184F8D9100565438 /* PSL-KittithadaBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE30184F8D9100565438 /* PSL-KittithadaBoldItalic.ttf */; };
+		F2DBFE3B184F8DB100565438 /* AppSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE39184F8DB100565438 /* AppSetting.plist */; };
+		F2DBFE3C184F8DB100565438 /* AppSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE39184F8DB100565438 /* AppSetting.plist */; };
+		F2DBFE3D184F8DB100565438 /* Languages.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE3A184F8DB100565438 /* Languages.plist */; };
+		F2DBFE3E184F8DB100565438 /* Languages.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE3A184F8DB100565438 /* Languages.plist */; };
+		F2DBFE43184F8DE900565438 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE41184F8DE900565438 /* MainViewController.m */; };
+		F2DBFE44184F8DE900565438 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE41184F8DE900565438 /* MainViewController.m */; };
+		F2DBFE45184F8DE900565438 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE42184F8DE900565438 /* MainViewController.xib */; };
+		F2DBFE46184F8DE900565438 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE42184F8DE900565438 /* MainViewController.xib */; };
+		F2DBFE4C184F8E4200565438 /* EfilingRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE4A184F8E4200565438 /* EfilingRegisterViewController.m */; };
+		F2DBFE4D184F8E4200565438 /* EfilingRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE4A184F8E4200565438 /* EfilingRegisterViewController.m */; };
+		F2DBFE4E184F8E4200565438 /* EfilingRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE4B184F8E4200565438 /* EfilingRegisterViewController.xib */; };
+		F2DBFE4F184F8E4200565438 /* EfilingRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE4B184F8E4200565438 /* EfilingRegisterViewController.xib */; };
+		F2DBFE54184F8E8600565438 /* EfilingCheckNewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE52184F8E8600565438 /* EfilingCheckNewUserViewController.m */; };
+		F2DBFE55184F8E8600565438 /* EfilingCheckNewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE52184F8E8600565438 /* EfilingCheckNewUserViewController.m */; };
+		F2DBFE56184F8E8600565438 /* EfilingCheckNewUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE53184F8E8600565438 /* EfilingCheckNewUserViewController.xib */; };
+		F2DBFE57184F8E8600565438 /* EfilingCheckNewUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE53184F8E8600565438 /* EfilingCheckNewUserViewController.xib */; };
+		F2DBFE5B184F8E9700565438 /* EfilingValidatePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE59184F8E9700565438 /* EfilingValidatePasswordViewController.m */; };
+		F2DBFE5C184F8E9700565438 /* EfilingValidatePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE59184F8E9700565438 /* EfilingValidatePasswordViewController.m */; };
+		F2DBFE5D184F8E9700565438 /* EfilingValidatePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE5A184F8E9700565438 /* EfilingValidatePasswordViewController.xib */; };
+		F2DBFE5E184F8E9700565438 /* EfilingValidatePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE5A184F8E9700565438 /* EfilingValidatePasswordViewController.xib */; };
+		F2DBFE63184F8EB600565438 /* EfilingForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE61184F8EB600565438 /* EfilingForgetPasswordViewController.m */; };
+		F2DBFE64184F8EB600565438 /* EfilingForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DBFE61184F8EB600565438 /* EfilingForgetPasswordViewController.m */; };
+		F2DBFE65184F8EB600565438 /* EfilingForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE62184F8EB600565438 /* EfilingForgetPasswordViewController.xib */; };
+		F2DBFE66184F8EB600565438 /* EfilingForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DBFE62184F8EB600565438 /* EfilingForgetPasswordViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2DBFDEC184F8C8700565438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2DBFDC4184F8C8700565438 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2DBFDCB184F8C8700565438;
+			remoteInfo = RDSmartTax;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2DBFDCC184F8C8700565438 /* RDSmartTax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDSmartTax.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DBFDCF184F8C8700565438 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F2DBFDD1184F8C8700565438 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F2DBFDD3184F8C8700565438 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F2DBFDD7184F8C8700565438 /* RDSmartTax-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RDSmartTax-Info.plist"; sourceTree = "<group>"; };
+		F2DBFDD9184F8C8700565438 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2DBFDDB184F8C8700565438 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2DBFDDD184F8C8700565438 /* RDSmartTax-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RDSmartTax-Prefix.pch"; sourceTree = "<group>"; };
+		F2DBFDDE184F8C8700565438 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2DBFDDF184F8C8700565438 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F2DBFDE1184F8C8700565438 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F2DBFDE7184F8C8700565438 /* RDSmartTaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RDSmartTaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DBFDE8184F8C8700565438 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F2DBFDF0184F8C8700565438 /* RDSmartTaxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RDSmartTaxTests-Info.plist"; sourceTree = "<group>"; };
+		F2DBFDF2184F8C8700565438 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2DBFDF4184F8C8700565438 /* RDSmartTaxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDSmartTaxTests.m; sourceTree = "<group>"; };
+		F2DBFE02184F8CE200565438 /* ENCheckNewUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENCheckNewUserService.h; sourceTree = "<group>"; };
+		F2DBFE03184F8CE200565438 /* ENCheckNewUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENCheckNewUserService.m; sourceTree = "<group>"; };
+		F2DBFE04184F8CE200565438 /* ENAuthenService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENAuthenService.h; sourceTree = "<group>"; };
+		F2DBFE05184F8CE200565438 /* ENAuthenService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENAuthenService.m; sourceTree = "<group>"; };
+		F2DBFE08184F8CEE00565438 /* JSONDictionaryExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONDictionaryExtensions.h; sourceTree = "<group>"; };
+		F2DBFE0A184F8D0400565438 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
+		F2DBFE0B184F8D0400565438 /* wrong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrong.png; sourceTree = "<group>"; };
+		F2DBFE12184F8D2B00565438 /* ShareUserDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareUserDetail.h; sourceTree = "<group>"; };
+		F2DBFE13184F8D2B00565438 /* ShareUserDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareUserDetail.m; sourceTree = "<group>"; };
+		F2DBFE17184F8D3A00565438 /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		F2DBFE18184F8D3A00565438 /* KeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		F2DBFE1B184F8D4300565438 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		F2DBFE1C184F8D4300565438 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		F2DBFE20184F8D5100565438 /* FontUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontUtil.h; sourceTree = "<group>"; };
+		F2DBFE21184F8D5100565438 /* FontUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontUtil.m; sourceTree = "<group>"; };
+		F2DBFE22184F8D5100565438 /* TextfieldUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextfieldUtil.h; sourceTree = "<group>"; };
+		F2DBFE23184F8D5100565438 /* TextfieldUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextfieldUtil.m; sourceTree = "<group>"; };
+		F2DBFE24184F8D5100565438 /* TextFormatterUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFormatterUtil.h; sourceTree = "<group>"; };
+		F2DBFE25184F8D5100565438 /* TextFormatterUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFormatterUtil.m; sourceTree = "<group>"; };
+		F2DBFE2D184F8D9100565438 /* PSL-Kittithada.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PSL-Kittithada.ttf"; sourceTree = "<group>"; };
+		F2DBFE2E184F8D9100565438 /* PSL-KittithadaBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PSL-KittithadaBold.ttf"; sourceTree = "<group>"; };
+		F2DBFE2F184F8D9100565438 /* PSL-KittithadaItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PSL-KittithadaItalic.ttf"; sourceTree = "<group>"; };
+		F2DBFE30184F8D9100565438 /* PSL-KittithadaBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PSL-KittithadaBoldItalic.ttf"; sourceTree = "<group>"; };
+		F2DBFE39184F8DB100565438 /* AppSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppSetting.plist; sourceTree = "<group>"; };
+		F2DBFE3A184F8DB100565438 /* Languages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Languages.plist; sourceTree = "<group>"; };
+		F2DBFE40184F8DE900565438 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F2DBFE41184F8DE900565438 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F2DBFE42184F8DE900565438 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		F2DBFE49184F8E4200565438 /* EfilingRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfilingRegisterViewController.h; sourceTree = "<group>"; };
+		F2DBFE4A184F8E4200565438 /* EfilingRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EfilingRegisterViewController.m; sourceTree = "<group>"; };
+		F2DBFE4B184F8E4200565438 /* EfilingRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EfilingRegisterViewController.xib; sourceTree = "<group>"; };
+		F2DBFE51184F8E8600565438 /* EfilingCheckNewUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfilingCheckNewUserViewController.h; sourceTree = "<group>"; };
+		F2DBFE52184F8E8600565438 /* EfilingCheckNewUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EfilingCheckNewUserViewController.m; sourceTree = "<group>"; };
+		F2DBFE53184F8E8600565438 /* EfilingCheckNewUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EfilingCheckNewUserViewController.xib; sourceTree = "<group>"; };
+		F2DBFE58184F8E9700565438 /* EfilingValidatePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfilingValidatePasswordViewController.h; sourceTree = "<group>"; };
+		F2DBFE59184F8E9700565438 /* EfilingValidatePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EfilingValidatePasswordViewController.m; sourceTree = "<group>"; };
+		F2DBFE5A184F8E9700565438 /* EfilingValidatePasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EfilingValidatePasswordViewController.xib; sourceTree = "<group>"; };
+		F2DBFE60184F8EB600565438 /* EfilingForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EfilingForgetPasswordViewController.h; sourceTree = "<group>"; };
+		F2DBFE61184F8EB600565438 /* EfilingForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EfilingForgetPasswordViewController.m; sourceTree = "<group>"; };
+		F2DBFE62184F8EB600565438 /* EfilingForgetPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EfilingForgetPasswordViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2DBFDC9184F8C8700565438 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DBFDD2184F8C8700565438 /* CoreGraphics.framework in Frameworks */,
+				F2DBFDD4184F8C8700565438 /* UIKit.framework in Frameworks */,
+				F2DBFDD0184F8C8700565438 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DBFDE4184F8C8700565438 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DBFDE9184F8C8700565438 /* XCTest.framework in Frameworks */,
+				F2DBFDEB184F8C8700565438 /* UIKit.framework in Frameworks */,
+				F2DBFDEA184F8C8700565438 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2DBFDC3184F8C8700565438 = {
+			isa = PBXGroup;
+			children = (
+				F2DBFDD5184F8C8700565438 /* RDSmartTax */,
+				F2DBFDEE184F8C8700565438 /* RDSmartTaxTests */,
+				F2DBFDCE184F8C8700565438 /* Frameworks */,
+				F2DBFDCD184F8C8700565438 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2DBFDCD184F8C8700565438 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFDCC184F8C8700565438 /* RDSmartTax.app */,
+				F2DBFDE7184F8C8700565438 /* RDSmartTaxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2DBFDCE184F8C8700565438 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFDCF184F8C8700565438 /* Foundation.framework */,
+				F2DBFDD1184F8C8700565438 /* CoreGraphics.framework */,
+				F2DBFDD3184F8C8700565438 /* UIKit.framework */,
+				F2DBFDE8184F8C8700565438 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2DBFDD5184F8C8700565438 /* RDSmartTax */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE3F184F8DD600565438 /* UI */,
+				F2DBFE10184F8D1500565438 /* Util */,
+				F2DBFE09184F8CF800565438 /* Images */,
+				F2DBFDFE184F8CBF00565438 /* Json */,
+				F2DBFDDE184F8C8700565438 /* AppDelegate.h */,
+				F2DBFDDF184F8C8700565438 /* AppDelegate.m */,
+				F2DBFDE1184F8C8700565438 /* Images.xcassets */,
+				F2DBFDD6184F8C8700565438 /* Supporting Files */,
+			);
+			path = RDSmartTax;
+			sourceTree = "<group>";
+		};
+		F2DBFDD6184F8C8700565438 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE39184F8DB100565438 /* AppSetting.plist */,
+				F2DBFE3A184F8DB100565438 /* Languages.plist */,
+				F2DBFE2C184F8D8800565438 /* Font */,
+				F2DBFDD7184F8C8700565438 /* RDSmartTax-Info.plist */,
+				F2DBFDD8184F8C8700565438 /* InfoPlist.strings */,
+				F2DBFDDB184F8C8700565438 /* main.m */,
+				F2DBFDDD184F8C8700565438 /* RDSmartTax-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2DBFDEE184F8C8700565438 /* RDSmartTaxTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFDF4184F8C8700565438 /* RDSmartTaxTests.m */,
+				F2DBFDEF184F8C8700565438 /* Supporting Files */,
+			);
+			path = RDSmartTaxTests;
+			sourceTree = "<group>";
+		};
+		F2DBFDEF184F8C8700565438 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFDF0184F8C8700565438 /* RDSmartTaxTests-Info.plist */,
+				F2DBFDF1184F8C8700565438 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2DBFDFE184F8CBF00565438 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE00184F8CCE00565438 /* Extensions */,
+				F2DBFDFF184F8CC600565438 /* Services */,
+			);
+			name = Json;
+			sourceTree = "<group>";
+		};
+		F2DBFDFF184F8CC600565438 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE01184F8CDA00565438 /* Login */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		F2DBFE00184F8CCE00565438 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE08184F8CEE00565438 /* JSONDictionaryExtensions.h */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F2DBFE01184F8CDA00565438 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE02184F8CE200565438 /* ENCheckNewUserService.h */,
+				F2DBFE03184F8CE200565438 /* ENCheckNewUserService.m */,
+				F2DBFE04184F8CE200565438 /* ENAuthenService.h */,
+				F2DBFE05184F8CE200565438 /* ENAuthenService.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		F2DBFE09184F8CF800565438 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE0A184F8D0400565438 /* correct.png */,
+				F2DBFE0B184F8D0400565438 /* wrong.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		F2DBFE10184F8D1500565438 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE1B184F8D4300565438 /* Util.h */,
+				F2DBFE1C184F8D4300565438 /* Util.m */,
+				F2DBFE1F184F8D4900565438 /* Text */,
+				F2DBFE16184F8D3000565438 /* Keyboard */,
+				F2DBFE11184F8D2000565438 /* ShareData */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		F2DBFE11184F8D2000565438 /* ShareData */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE12184F8D2B00565438 /* ShareUserDetail.h */,
+				F2DBFE13184F8D2B00565438 /* ShareUserDetail.m */,
+			);
+			name = ShareData;
+			sourceTree = "<group>";
+		};
+		F2DBFE16184F8D3000565438 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE17184F8D3A00565438 /* KeyboardViewController.h */,
+				F2DBFE18184F8D3A00565438 /* KeyboardViewController.m */,
+			);
+			name = Keyboard;
+			sourceTree = "<group>";
+		};
+		F2DBFE1F184F8D4900565438 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE20184F8D5100565438 /* FontUtil.h */,
+				F2DBFE21184F8D5100565438 /* FontUtil.m */,
+				F2DBFE22184F8D5100565438 /* TextfieldUtil.h */,
+				F2DBFE23184F8D5100565438 /* TextfieldUtil.m */,
+				F2DBFE24184F8D5100565438 /* TextFormatterUtil.h */,
+				F2DBFE25184F8D5100565438 /* TextFormatterUtil.m */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		F2DBFE2C184F8D8800565438 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE2D184F8D9100565438 /* PSL-Kittithada.ttf */,
+				F2DBFE2E184F8D9100565438 /* PSL-KittithadaBold.ttf */,
+				F2DBFE2F184F8D9100565438 /* PSL-KittithadaItalic.ttf */,
+				F2DBFE30184F8D9100565438 /* PSL-KittithadaBoldItalic.ttf */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		F2DBFE3F184F8DD600565438 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE47184F8E1500565438 /* Efiling */,
+				F2DBFE40184F8DE900565438 /* MainViewController.h */,
+				F2DBFE41184F8DE900565438 /* MainViewController.m */,
+				F2DBFE42184F8DE900565438 /* MainViewController.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		F2DBFE47184F8E1500565438 /* Efiling */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE50184F8E6C00565438 /* Login */,
+				F2DBFE48184F8E2000565438 /* Register */,
+			);
+			name = Efiling;
+			sourceTree = "<group>";
+		};
+		F2DBFE48184F8E2000565438 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE49184F8E4200565438 /* EfilingRegisterViewController.h */,
+				F2DBFE4A184F8E4200565438 /* EfilingRegisterViewController.m */,
+				F2DBFE4B184F8E4200565438 /* EfilingRegisterViewController.xib */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		F2DBFE50184F8E6C00565438 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE5F184F8E9F00565438 /* ForgetPassword */,
+				F2DBFE51184F8E8600565438 /* EfilingCheckNewUserViewController.h */,
+				F2DBFE52184F8E8600565438 /* EfilingCheckNewUserViewController.m */,
+				F2DBFE53184F8E8600565438 /* EfilingCheckNewUserViewController.xib */,
+				F2DBFE58184F8E9700565438 /* EfilingValidatePasswordViewController.h */,
+				F2DBFE59184F8E9700565438 /* EfilingValidatePasswordViewController.m */,
+				F2DBFE5A184F8E9700565438 /* EfilingValidatePasswordViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		F2DBFE5F184F8E9F00565438 /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				F2DBFE60184F8EB600565438 /* EfilingForgetPasswordViewController.h */,
+				F2DBFE61184F8EB600565438 /* EfilingForgetPasswordViewController.m */,
+				F2DBFE62184F8EB600565438 /* EfilingForgetPasswordViewController.xib */,
+			);
+			name = ForgetPassword;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2DBFDCB184F8C8700565438 /* RDSmartTax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2DBFDF8184F8C8700565438 /* Build configuration list for PBXNativeTarget "RDSmartTax" */;
+			buildPhases = (
+				F2DBFDC8184F8C8700565438 /* Sources */,
+				F2DBFDC9184F8C8700565438 /* Frameworks */,
+				F2DBFDCA184F8C8700565438 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RDSmartTax;
+			productName = RDSmartTax;
+			productReference = F2DBFDCC184F8C8700565438 /* RDSmartTax.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2DBFDE6184F8C8700565438 /* RDSmartTaxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2DBFDFB184F8C8700565438 /* Build configuration list for PBXNativeTarget "RDSmartTaxTests" */;
+			buildPhases = (
+				F2DBFDE3184F8C8700565438 /* Sources */,
+				F2DBFDE4184F8C8700565438 /* Frameworks */,
+				F2DBFDE5184F8C8700565438 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2DBFDED184F8C8700565438 /* PBXTargetDependency */,
+			);
+			name = RDSmartTaxTests;
+			productName = RDSmartTaxTests;
+			productReference = F2DBFDE7184F8C8700565438 /* RDSmartTaxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2DBFDC4184F8C8700565438 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = RevenueDepartment;
+				TargetAttributes = {
+					F2DBFDE6184F8C8700565438 = {
+						TestTargetID = F2DBFDCB184F8C8700565438;
+					};
+				};
+			};
+			buildConfigurationList = F2DBFDC7184F8C8700565438 /* Build configuration list for PBXProject "RDSmartTax" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F2DBFDC3184F8C8700565438;
+			productRefGroup = F2DBFDCD184F8C8700565438 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2DBFDCB184F8C8700565438 /* RDSmartTax */,
+				F2DBFDE6184F8C8700565438 /* RDSmartTaxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2DBFDCA184F8C8700565438 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DBFDDA184F8C8700565438 /* InfoPlist.strings in Resources */,
+				F2DBFE3B184F8DB100565438 /* AppSetting.plist in Resources */,
+				F2DBFE0E184F8D0400565438 /* wrong.png in Resources */,
+				F2DBFE37184F8D9100565438 /* PSL-KittithadaBoldItalic.ttf in Resources */,
+				F2DBFE3D184F8DB100565438 /* Languages.plist in Resources */,
+				F2DBFE45184F8DE900565438 /* MainViewController.xib in Resources */,
+				F2DBFE56184F8E8600565438 /* EfilingCheckNewUserViewController.xib in Resources */,
+				F2DBFE33184F8D9100565438 /* PSL-KittithadaBold.ttf in Resources */,
+				F2DBFE65184F8EB600565438 /* EfilingForgetPasswordViewController.xib in Resources */,
+				F2DBFE5D184F8E9700565438 /* EfilingValidatePasswordViewController.xib in Resources */,
+				F2DBFDE2184F8C8700565438 /* Images.xcassets in Resources */,
+				F2DBFE4E184F8E4200565438 /* EfilingRegisterViewController.xib in Resources */,
+				F2DBFE0C184F8D0400565438 /* correct.png in Resources */,
+				F2DBFE31184F8D9100565438 /* PSL-Kittithada.ttf in Resources */,
+				F2DBFE35184F8D9100565438 /* PSL-KittithadaItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DBFDE5184F8C8700565438 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DBFE0D184F8D0400565438 /* correct.png in Resources */,
+				F2DBFE3C184F8DB100565438 /* AppSetting.plist in Resources */,
+				F2DBFE57184F8E8600565438 /* EfilingCheckNewUserViewController.xib in Resources */,
+				F2DBFE36184F8D9100565438 /* PSL-KittithadaItalic.ttf in Resources */,
+				F2DBFE4F184F8E4200565438 /* EfilingRegisterViewController.xib in Resources */,
+				F2DBFE38184F8D9100565438 /* PSL-KittithadaBoldItalic.ttf in Resources */,
+				F2DBFE32184F8D9100565438 /* PSL-Kittithada.ttf in Resources */,
+				F2DBFE66184F8EB600565438 /* EfilingForgetPasswordViewController.xib in Resources */,
+				F2DBFE0F184F8D0400565438 /* wrong.png in Resources */,
+				F2DBFE34184F8D9100565438 /* PSL-KittithadaBold.ttf in Resources */,
+				F2DBFE46184F8DE900565438 /* MainViewController.xib in Resources */,
+				F2DBFDF3184F8C8700565438 /* InfoPlist.strings in Resources */,
+				F2DBFE3E184F8DB100565438 /* Languages.plist in Resources */,
+				F2DBFE5E184F8E9700565438 /* EfilingValidatePasswordViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2DBFDC8184F8C8700565438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DBFE43184F8DE900565438 /* MainViewController.m in Sources */,
+				F2DBFDE0184F8C8700565438 /* AppDelegate.m in Sources */,
+				F2DBFE19184F8D3A00565438 /* KeyboardViewController.m in Sources */,
+				F2DBFE26184F8D5100565438 /* FontUtil.m in Sources */,
+				F2DBFE63184F8EB600565438 /* EfilingForgetPasswordViewController.m in Sources */,
+				F2DBFE2A184F8D5100565438 /* TextFormatterUtil.m in Sources */,
+				F2DBFE07184F8CE200565438 /* ENAuthenService.m in Sources */,
+				F2DBFE28184F8D5100565438 /* TextfieldUtil.m in Sources */,
+				F2DBFE06184F8CE200565438 /* ENCheckNewUserService.m in Sources */,
+				F2DBFE5B184F8E9700565438 /* EfilingValidatePasswordViewController.m in Sources */,
+				F2DBFE4C184F8E4200565438 /* EfilingRegisterViewController.m in Sources */,
+				F2DBFE14184F8D2B00565438 /* ShareUserDetail.m in Sources */,
+				F2DBFE54184F8E8600565438 /* EfilingCheckNewUserViewController.m in Sources */,
+				F2DBFE1D184F8D4300565438 /* Util.m in Sources */,
+				F2DBFDDC184F8C8700565438 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DBFDE3184F8C8700565438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DBFDF5184F8C8700565438 /* RDSmartTaxTests.m in Sources */,
+				F2DBFE29184F8D5100565438 /* TextfieldUtil.m in Sources */,
+				F2DBFE2B184F8D5100565438 /* TextFormatterUtil.m in Sources */,
+				F2DBFE5C184F8E9700565438 /* EfilingValidatePasswordViewController.m in Sources */,
+				F2DBFE44184F8DE900565438 /* MainViewController.m in Sources */,
+				F2DBFE1A184F8D3A00565438 /* KeyboardViewController.m in Sources */,
+				F2DBFE4D184F8E4200565438 /* EfilingRegisterViewController.m in Sources */,
+				F2DBFE64184F8EB600565438 /* EfilingForgetPasswordViewController.m in Sources */,
+				F2DBFE55184F8E8600565438 /* EfilingCheckNewUserViewController.m in Sources */,
+				F2DBFE27184F8D5100565438 /* FontUtil.m in Sources */,
+				F2DBFE15184F8D2B00565438 /* ShareUserDetail.m in Sources */,
+				F2DBFE1E184F8D4300565438 /* Util.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2DBFDED184F8C8700565438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2DBFDCB184F8C8700565438 /* RDSmartTax */;
+			targetProxy = F2DBFDEC184F8C8700565438 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2DBFDD8184F8C8700565438 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2DBFDD9184F8C8700565438 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F2DBFDF1184F8C8700565438 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2DBFDF2184F8C8700565438 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2DBFDF6184F8C8700565438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2DBFDF7184F8C8700565438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2DBFDF9184F8C8700565438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDSmartTax/RDSmartTax-Prefix.pch";
+				INFOPLIST_FILE = "RDSmartTax/RDSmartTax-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F2DBFDFA184F8C8700565438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDSmartTax/RDSmartTax-Prefix.pch";
+				INFOPLIST_FILE = "RDSmartTax/RDSmartTax-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F2DBFDFC184F8C8700565438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RDSmartTax.app/RDSmartTax";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDSmartTax/RDSmartTax-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RDSmartTaxTests/RDSmartTaxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F2DBFDFD184F8C8700565438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RDSmartTax.app/RDSmartTax";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDSmartTax/RDSmartTax-Prefix.pch";
+				INFOPLIST_FILE = "RDSmartTaxTests/RDSmartTaxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2DBFDC7184F8C8700565438 /* Build configuration list for PBXProject "RDSmartTax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DBFDF6184F8C8700565438 /* Debug */,
+				F2DBFDF7184F8C8700565438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2DBFDF8184F8C8700565438 /* Build configuration list for PBXNativeTarget "RDSmartTax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DBFDF9184F8C8700565438 /* Debug */,
+				F2DBFDFA184F8C8700565438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2DBFDFB184F8C8700565438 /* Build configuration list for PBXNativeTarget "RDSmartTaxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DBFDFC184F8C8700565438 /* Debug */,
+				F2DBFDFD184F8C8700565438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2DBFDC4184F8C8700565438 /* Project object */;
+}
