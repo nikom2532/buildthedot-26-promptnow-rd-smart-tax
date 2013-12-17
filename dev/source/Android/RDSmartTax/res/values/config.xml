@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="status_newuser">0</string>
+    <string name="status_olduser">1</string>
+    <string name="OK">OK</string>
+    <string name="ERROR">ERROR</string>
+
+</resources>

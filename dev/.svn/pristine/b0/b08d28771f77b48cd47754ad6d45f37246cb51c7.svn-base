@@ -1,0 +1,35 @@
+package com.revenuedepartment.datapackages;
+
+import com.revenuedepartment.datamodels.M_Forms;
+import com.revenuedepartment.datamodels.M_Keys;
+
+public class P_Filling {
+	public String getApiRefNo() {
+		return apiRefNo;
+	}
+	public void setApiRefNo(String apiRefNo) {
+		this.apiRefNo = apiRefNo;
+	}
+	public M_Keys getKeys() {
+		return keys;
+	}
+	public void setKeys(M_Keys keys) {
+		this.keys = keys;
+	}
+	public String getResponseStatus() {
+		return responseStatus;
+	}
+	public void setResponseStatus(String responseStatus) {
+		this.responseStatus = responseStatus;
+	}
+	public M_Forms[] getForms() {
+		return forms;
+	}
+	public void setForms(M_Forms[] forms) {
+		this.forms = forms;
+	}
+	String apiRefNo = "";
+	M_Keys keys = null;
+	String responseStatus = "";
+	M_Forms [] forms = null;
+}

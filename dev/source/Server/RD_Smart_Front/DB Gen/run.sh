@@ -1,0 +1,1 @@
+java -jar DBRepositoryGen.jar rdsmart_db.xml

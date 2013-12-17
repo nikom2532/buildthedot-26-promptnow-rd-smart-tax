@@ -1,0 +1,1 @@
+java -cp sqljdbc-1.2.0.jar -jar DBRepositoryGen.jar rdsmart_db.xml D:\Code\NetBeansProjects\RD_Smart_Application\RD_Smart_Front\src\java\

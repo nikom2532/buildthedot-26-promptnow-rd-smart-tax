@@ -1,0 +1,138 @@
+//
+//  FormUtil.m
+//  RDSmartTax
+//
+//  Created by fone on 12/8/56 BE.
+//  Copyright (c) 2556 RevenueDepartment. All rights reserved.
+//
+
+#import "FormUtil.h"
+#import "FontUtil.h"
+
+@implementation FormUtil
+
++(UITextField*) initTextFieldKeyboardTypeTextWithText: (NSString*)text
+                                   placeholder: (NSString*)placeholder {
+    
+	UITextField *tf = [[UITextField alloc] init];
+	tf.placeholder = placeholder ;
+	tf.text = text ;
+	tf.autocorrectionType = UITextAutocorrectionTypeNo ;
+	tf.autocapitalizationType = UITextAutocapitalizationTypeNone;
+	tf.adjustsFontSizeToFitWidth = YES;
+    tf.frame = CGRectMake(10, 35, 500, 30);
+    tf.keyboardType = UIKeyboardTypeAlphabet;
+    tf.font = [FontUtil fontWithFontSize:eFontSizeNormal Style:eFontStyleNormal];
+	return tf ;
+}
+
++(UITextField*) initTextFieldKeyboardTypeEmailWithText: (NSString*)text
+                                          placeholder: (NSString*)placeholder {
+    
+	UITextField *tf = [[UITextField alloc] init];
+	tf.placeholder = placeholder ;
+	tf.text = text ;
+	tf.autocorrectionType = UITextAutocorrectionTypeNo ;
+	tf.autocapitalizationType = UITextAutocapitalizationTypeNone;
+	tf.adjustsFontSizeToFitWidth = YES;
+    tf.frame = CGRectMake(10, 35, 500, 30);
+    tf.keyboardType = UIKeyboardTypeEmailAddress;
+    tf.font = [FontUtil fontWithFontSize:eFontSizeNormal Style:eFontStyleNormal];
+	return tf ;
+}
+
++(UITextField*) initTextFieldKeyboardTypePhoneWithText: (NSString*)text
+                                           placeholder: (NSString*)placeholder {
+    
+	UITextField *tf = [[UITextField alloc] init];
+	tf.placeholder = placeholder ;
+	tf.text = text ;
+	tf.autocorrectionType = UITextAutocorrectionTypeNo ;
+	tf.autocapitalizationType = UITextAutocapitalizationTypeNone;
+	tf.adjustsFontSizeToFitWidth = YES;
+    tf.frame = CGRectMake(10, 35, 500, 30);
+    tf.keyboardType = UIKeyboardTypeNamePhonePad;
+    tf.font = [FontUtil fontWithFontSize:eFontSizeNormal Style:eFontStyleNormal];
+	return tf ;
+}
+
++(UITextField*) initTextFieldKeyboardTypeNumberWithText: (NSString*)text
+                                           placeholder: (NSString*)placeholder {
+    
+	UITextField *tf = [[UITextField alloc] init];
+	tf.placeholder = placeholder ;
+	tf.text = text ;
+	tf.autocorrectionType = UITextAutocorrectionTypeNo ;
+	tf.autocapitalizationType = UITextAutocapitalizationTypeNone;
+	tf.adjustsFontSizeToFitWidth = YES;
+    tf.frame = CGRectMake(10, 35, 500, 30);
+    tf.keyboardType = UIKeyboardTypeNumberPad;
+    tf.font = [FontUtil fontWithFontSize:eFontSizeNormal Style:eFontStyleNormal];
+	return tf ;
+}
+
++(UITextField*) initTextFieldKeyboardTypePasswordWithText: (NSString*)text
+                                            placeholder: (NSString*)placeholder {
+    
+	UITextField *tf = [[UITextField alloc] init];
+	tf.placeholder = placeholder ;
+	tf.text = text ;
+	tf.autocorrectionType = UITextAutocorrectionTypeNo ;
+	tf.autocapitalizationType = UITextAutocapitalizationTypeNone;
+	tf.adjustsFontSizeToFitWidth = YES;
+    tf.frame = CGRectMake(10, 35, 500, 30);
+    tf.keyboardType = UIKeyboardTypeDefault;
+    tf.secureTextEntry = YES;
+    tf.font = [FontUtil fontWithFontSize:eFontSizeNormal Style:eFontStyleNormal];
+	return tf ;
+}
+
++(UIButton*) initButtonWithTag: (NSInteger*) tagVal {
+    UIButton *but= [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    but.tag = tagVal;
+    [but setFrame:CGRectMake(120, 12, 30, 30)];
+    [but setBackgroundImage:[UIImage imageNamed:@"wrong.png"] forState:UIControlStateNormal];
+    [but setExclusiveTouch:YES];
+    return but;
+}
+
++(UILabel *)initLabelWithTitleText:(NSString *) text {
+    UILabel *lbl = [[UILabel alloc] init];
+    [lbl setFrame:CGRectMake(10,15,500,20)];
+    lbl.backgroundColor=[UIColor clearColor];
+    lbl.userInteractionEnabled=NO;
+    lbl.font = [FontUtil fontWithFontSize:eFontSizeNormal Style:eFontStyleBold];
+    lbl.text = text;
+    return lbl;
+}
+
++(UILabel *)initLabelWithSubTitleText:(NSString *) text {
+    UILabel *lbl = [[UILabel alloc] init];
+    [lbl setFrame:CGRectMake(10,40,500,20)];
+    lbl.backgroundColor=[UIColor clearColor];
+    lbl.userInteractionEnabled=NO;
+    lbl.font = [FontUtil fontWithFontSize:eFontSizeNormal Style:eFontStyleNormal];
+    lbl.text = text;
+    return lbl;
+}
+
++(UIButton *)initNextButtonWithTitle : (NSString *) title {
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    btn.frame = CGRectMake(10.0, 30.0, 300.0, 30.0);
+    [btn setTitle:title forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor clearColor];
+    [btn.titleLabel setFont:[FontUtil fontWithFontSize:eFontSizeNormal Style:eFontStyleNormal]];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal ];
+    UIImage *buttonImageNormal = [UIImage imageNamed:@"wrong.png"];
+    UIImage *strechableButtonImageNormal = [buttonImageNormal stretchableImageWithLeftCapWidth:12 topCapHeight:0];
+    [btn setBackgroundImage:strechableButtonImageNormal forState:UIControlStateNormal];
+    UIImage *buttonImagePressed = [UIImage imageNamed:@"correct.png"];
+    UIImage *strechableButtonImagePressed = [buttonImagePressed stretchableImageWithLeftCapWidth:12 topCapHeight:0];
+    [btn setBackgroundImage:strechableButtonImagePressed forState:UIControlStateHighlighted];
+    
+    return btn;
+    
+}
+
+@end
