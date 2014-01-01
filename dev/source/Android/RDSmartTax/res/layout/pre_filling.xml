@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.revenuedepartment.app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <!-- <com.revenuedepartment.customview.TopBar -->
+    <!-- android:id="@+id/topBar" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" > -->
+    <!-- </com.revenuedepartment.customview.TopBar> -->
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bar_top"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/icon_efiling"
+            android:visibility="visible" />
+
+        <com.revenuedepartment.customview.TextViewCustom
+            android:id="@+id/labelResultCalTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/label_cal_tax_th"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:visibility="gone"
+            custom:textstyle="bold" />
+
+        <com.revenuedepartment.customview.ButtonCustom
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="Back"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topBar"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <com.revenuedepartment.customview.TextViewCustom
+                style="@style/label_black_25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="คำแนะนำ"
+                android:textSize="40dp"
+                custom:textstyle="bold" />
+
+            <com.revenuedepartment.customview.TextViewCustom
+                style="@style/label_black_20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="1. บันทึกข้อมูลของท่านและคู่สมรสให้ถูกต้องครบถ้วน เพื่อประโยชน์ในการใช้สิทธิ" />
+
+            <com.revenuedepartment.customview.TextViewCustom
+                style="@style/label_black_20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. ตรวจสอบที่อยู่และหมายเลขโทรศัพท์ เพื่อรับข้อมูล บ่าวสาร / SMS / เช็คคืนเงินภาษี" />
+
+            <com.revenuedepartment.customview.TextViewCustom
+                style="@style/label_black_20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. หากประสงค์จะแก้ไขข้อมูลต้องดำเนิน ก่อนการยื่นแบบฯ" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.revenuedepartment.customview.ButtonCustom
+        android:id="@+id/btFilling"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="40dp" />
+
+</RelativeLayout>

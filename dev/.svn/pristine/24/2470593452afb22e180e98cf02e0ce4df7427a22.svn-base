@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A2093" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EfilingTaxPaymentViewController">
+            <connections>
+                <outlet property="amountHLabel" destination="jEm-kz-ahl" id="O2y-nO-Uzl"/>
+                <outlet property="amountLabel" destination="hHI-8L-neJ" id="6ip-md-Qer"/>
+                <outlet property="cateOfPayHLabel" destination="t1D-tI-d8v" id="IEs-pO-HBY"/>
+                <outlet property="controlNumberHLabel" destination="f5p-M6-D4x" id="mJD-7J-sWO"/>
+                <outlet property="controlNumberLabel" destination="j4h-Jy-Xet" id="hDi-3w-I4p"/>
+                <outlet property="detailview" destination="nSh-RF-fVN" id="9Sb-bk-Hcr"/>
+                <outlet property="isZeroView" destination="Af1-yO-LJN" id="b55-qr-vjn"/>
+                <outlet property="listTaxHLabel" destination="CIX-YN-tSr" id="blX-Tg-UMW"/>
+                <outlet property="numberOfTaxHLabel" destination="IuT-xP-YRv" id="U1h-4Q-Cvf"/>
+                <outlet property="numberOfTaxLabel" destination="oNX-Dy-vSL" id="28m-RX-eLN"/>
+                <outlet property="pHeaderLabel" destination="agk-Gh-7px" id="pnA-vn-LYh"/>
+                <outlet property="payDateHLabel" destination="NXQ-Yf-R89" id="mkI-dq-Lyb"/>
+                <outlet property="payDateLabel" destination="EP6-qe-Ie9" id="HpI-UR-sd7"/>
+                <outlet property="payTableView" destination="ada-hG-xgT" id="OCV-4D-8Zq"/>
+                <outlet property="printButton" destination="gDY-3z-RlI" id="ywT-Yg-Pyn"/>
+                <outlet property="refnoHLabel" destination="j1P-LV-TkA" id="Tds-ZE-3Lh"/>
+                <outlet property="refnoLabel" destination="SnX-W7-MGs" id="ykG-va-I9g"/>
+                <outlet property="scrollview" destination="sDr-tL-c3M" id="fRe-3Q-abz"/>
+                <outlet property="view" destination="GAu-eS-xQI" id="Oqh-iy-a7j"/>
+                <outlet property="zDateHLabel" destination="RSq-fI-haX" id="Kqc-LI-lmZ"/>
+                <outlet property="zDateLabel" destination="o52-hA-FTY" id="HC5-7d-U0p"/>
+                <outlet property="zHeaderLabel" destination="HMj-bs-7AL" id="cSQ-J9-PhS"/>
+                <outlet property="zRefHLabel" destination="WW3-XR-TrK" id="VYL-Jm-bI5"/>
+                <outlet property="zRefLabel" destination="7Y2-pi-M1B" id="9cu-pl-jAN"/>
+                <outlet property="zTaxAmountHLabel" destination="iA1-7T-46x" id="OY7-al-cfr"/>
+                <outlet property="zTaxAmountLabel" destination="RHr-qN-Wl4" id="zO6-bZ-u0H"/>
+                <outlet property="zThankLabel" destination="40T-JW-903" id="dK1-0P-eIB"/>
+                <outlet property="zYearHLabel" destination="wsV-8d-WLX" id="NtF-ea-cU2"/>
+                <outlet property="zYearLabel" destination="mjA-Nr-hPd" id="Tzg-MB-jAu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nSh-RF-fVN" userLabel="isPay">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="534"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เลขอ้างอิงการบันทึกแบบ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j1P-LV-TkA">
+                    <rect key="frame" x="20" y="35" width="203" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SB10555344" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SnX-W7-MGs">
+                    <rect key="frame" x="191" y="35" width="109" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="กำหนดชำระภายในวันที่" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NXQ-Yf-R89">
+                    <rect key="frame" x="20" y="64" width="203" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03/12/2013" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EP6-qe-Ie9">
+                    <rect key="frame" x="191" y="64" width="109" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ข้อมูลการชำระภาษี" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CIX-YN-tSr">
+                    <rect key="frame" x="20" y="93" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ช่องทางการชำระภาษี" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t1D-tI-d8v">
+                    <rect key="frame" x="20" y="301" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เลขประจำตัวผู้เสียภาษีอากร" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IuT-xP-YRv">
+                    <rect key="frame" x="20" y="124" width="170" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234567890123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oNX-Dy-vSL">
+                    <rect key="frame" x="176" y="141" width="124" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัสควบคุม" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f5p-M6-D4x">
+                    <rect key="frame" x="20" y="175" width="135" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2343533532255890" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j4h-Jy-Xet">
+                    <rect key="frame" x="147" y="175" width="153" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="จำนวนเงินที่ต้องชำระ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jEm-kz-ahl">
+                    <rect key="frame" x="20" y="204" width="203" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2,000.00 บาท " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hHI-8L-neJ">
+                    <rect key="frame" x="191" y="204" width="109" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ada-hG-xgT">
+                    <rect key="frame" x="20" y="339" width="280" height="186"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ZeF-b2-ZCv"/>
+                        <outlet property="delegate" destination="-1" id="Unb-1H-IAd"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wlA-Pa-fvc">
+                    <rect key="frame" x="12" y="259" width="297" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="60" maxX="0.0" maxY="-60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="แสดง Barcode" backgroundImage="btn_green.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="printClicked:" destination="-1" eventType="touchUpInside" id="rz1-GU-9NB"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ผลการยื่นแบบ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="agk-Gh-7px">
+                    <rect key="frame" x="20" y="0.0" width="208" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="60" maxX="0.0" maxY="-60"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <view contentMode="scaleToFill" id="Af1-yO-LJN" userLabel="isZero">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="257"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="เลขอ้างอิงการบันทึกแบบ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WW3-XR-TrK">
+                    <rect key="frame" x="20" y="39" width="203" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SB10555344" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Y2-pi-M1B">
+                    <rect key="frame" x="191" y="39" width="109" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ปีภาษี" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wsV-8d-WLX">
+                    <rect key="frame" x="20" y="68" width="203" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2556" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mjA-Nr-hPd">
+                    <rect key="frame" x="191" y="68" width="109" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="วันเดือนปีที่ยื่นแบบ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RSq-fI-haX">
+                    <rect key="frame" x="20" y="100" width="203" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03/12/2013" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o52-hA-FTY">
+                    <rect key="frame" x="191" y="100" width="109" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ภาษีที่ได้รับคืน" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iA1-7T-46x">
+                    <rect key="frame" x="20" y="129" width="203" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2,000 บาท" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RHr-qN-Wl4">
+                    <rect key="frame" x="191" y="129" width="109" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="กรมสรรพากรได้รับรายการยื่นแบบ ภ.ง.ด.91 เรียบร้อยแล้ว ขอบคุณที่ใช้บริการ RD Smart Tax" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="40T-JW-903">
+                    <rect key="frame" x="20" y="184" width="280" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" id="IJL-oK-yVx">
+                    <rect key="frame" x="20" y="161" width="280" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ผลการยื่นแบบ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HMj-bs-7AL">
+                    <rect key="frame" x="20" y="1" width="208" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="60" maxX="0.0" maxY="-60"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <view contentMode="scaleToFill" id="GAu-eS-xQI">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="sDr-tL-c3M">
+                    <rect key="frame" x="0.0" y="80" width="320" height="488"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                </scrollView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gDY-3z-RlI">
+                    <rect key="frame" x="225" y="94" width="81" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="60" maxX="0.0" maxY="-60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="พิมพ์แบบ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="printClicked:" destination="-1" eventType="touchUpInside" id="b1g-vO-6FL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_green.png" width="297" height="34"/>
+    </resources>
+</document>

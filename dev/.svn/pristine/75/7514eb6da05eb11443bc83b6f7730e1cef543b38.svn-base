@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EfilingPrintFormAndReceiptViewController">
+            <connections>
+                <outlet property="btnForm" destination="0rj-Ib-RDZ" id="xKB-GY-e0K"/>
+                <outlet property="btnReceipt" destination="Qxc-vN-yb7" id="iTj-sl-919"/>
+                <outlet property="contentView" destination="cWT-g0-3zG" id="4Jy-Hd-wYc"/>
+                <outlet property="pHeaderView" destination="lU2-QT-Vsu" id="hVq-j1-mze"/>
+                <outlet property="segmentControl" destination="qtB-9v-aiI" id="2XT-0A-qNX"/>
+                <outlet property="tableView" destination="81Q-RZ-5Xa" id="laE-TB-Y5C"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="cWT-g0-3zG">
+                    <rect key="frame" x="0.0" y="176" width="320" height="304"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="81Q-RZ-5Xa">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="304"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="bFQ-7Z-lvY"/>
+                                <outlet property="delegate" destination="-1" id="WUF-zr-ykL"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="wPk-Tv-Jyz">
+                    <rect key="frame" x="0.0" y="88" width="320" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qxc-vN-yb7">
+                            <rect key="frame" x="168" y="6" width="132" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="พิมพ์ใบเสร็จ" backgroundImage="btn_green.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onButtonPrintReceiptClicked:" destination="-1" eventType="touchUpInside" id="9H6-hI-zqW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0rj-Ib-RDZ">
+                            <rect key="frame" x="20" y="6" width="133" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="พิมพ์แบบ" backgroundImage="btn_green.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onButtonPrintFormClicked:" destination="-1" eventType="touchUpInside" id="fWa-hW-iMZ"/>
+                            </connections>
+                        </button>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="qtB-9v-aiI">
+                            <rect key="frame" x="20" y="46" width="280" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                            <segments>
+                                <segment title="Current Year"/>
+                                <segment title="Last Year"/>
+                            </segments>
+                            <color key="tintColor" red="0.45490199329999997" green="0.8078432083" blue="0.14901961389999999" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <action selector="segmentedControlIndexChanged:" destination="-1" eventType="valueChanged" id="Lrc-ql-Rnh"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="lU2-QT-Vsu">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_green.png" width="297" height="34"/>
+    </resources>
+</document>

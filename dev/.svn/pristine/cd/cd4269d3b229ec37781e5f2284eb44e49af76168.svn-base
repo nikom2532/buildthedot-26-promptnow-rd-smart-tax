@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.revenuedepartment.app"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lnScore"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.revenuedepartment.customview.TextViewCustom
+            android:id="@+id/txScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="25dp"
+            custom:textstyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

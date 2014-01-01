@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.revenuedepartment.app"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bar_top" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+           android:background="@color/color_bar_top" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/icon_efiling"
+            android:visibility="visible" />
+
+        <com.revenuedepartment.customview.TextViewCustom
+            android:id="@+id/labelResultCalTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/label_cal_tax_th"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:visibility="gone"
+            custom:textstyle="bold" />
+
+        <com.revenuedepartment.customview.ButtonCustom
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="Back"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

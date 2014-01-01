@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.revenuedepartment.app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/lnTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bar_top"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/icon_efiling"
+            android:visibility="visible" />
+
+        <com.revenuedepartment.customview.TextViewCustom
+            android:id="@+id/labelResultCalTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/label_cal_tax_th"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:visibility="gone"
+            custom:textstyle="bold" />
+
+        <com.revenuedepartment.customview.ButtonCustom
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="Back" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webViewPdf"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lnTop" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <com.revenuedepartment.customview.ButtonCustom
+            android:id="@+id/btSavePDF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_save_pdf_th" />
+
+        <com.revenuedepartment.customview.ButtonCustom
+            android:id="@+id/btSendEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_send_email_pdf_th" />
+    </LinearLayout>
+
+</RelativeLayout>

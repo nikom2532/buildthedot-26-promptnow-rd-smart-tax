@@ -1,0 +1,83 @@
+//
+//  TaxStep5ViewController.h
+//  RDSmartTax
+//
+//  Created by saritwat anutakonpatipan on 12/19/2556 BE.
+//  Copyright (c) 2556 RevenueDepartment. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface TaxStep5ViewController : HeaderViewController
+{
+    __weak IBOutlet UIScrollView *scrollview;
+    IBOutlet UIView *taxBackView;
+    
+    IBOutlet UIView *taxPayView;
+    IBOutlet UIView *footerView;
+    
+    __weak IBOutlet UILabel *titleLabel;
+    //--Tax Back
+    __weak IBOutlet UILabel *tBackHLabel;
+    __weak IBOutlet UILabel *tBackLabel;
+    
+    
+    __weak IBOutlet UILabel *partyHLabel;
+    __weak IBOutlet UIButton *party1Button;
+    __weak IBOutlet UILabel *party1Label;
+    __weak IBOutlet UIButton *party2Button;
+    __weak IBOutlet UILabel *party2Label;
+    
+    __weak IBOutlet UILabel *choosePartyHLabel;
+    __weak IBOutlet UIButton *choosePartyButton;
+    
+    
+    __weak IBOutlet UILabel *backTaxHLabel;
+    __weak IBOutlet UIButton *back1Button;
+    __weak IBOutlet UILabel *back1Label;
+    __weak IBOutlet UIButton *back2Button;
+    __weak IBOutlet UILabel *back2Label;
+    
+    __weak IBOutlet UILabel *telephoneHLabel;
+    __weak IBOutlet UITextField *telephoneTextField;
+    
+    //--Tax Pay
+    IBOutlet UIView *taxPayNotZeroView;
+    __weak IBOutlet UILabel *tpHeaderLabel;
+    __weak IBOutlet UILabel *tpPayHLabel;
+    __weak IBOutlet UILabel *tpPayLabel;
+    __weak IBOutlet UILabel *tpPartyHeaderLabel;
+    __weak IBOutlet UIButton *tpButton1;
+    __weak IBOutlet UILabel *tpButton1Label;
+    __weak IBOutlet UIButton *tpButton2;
+    __weak IBOutlet UILabel *tpButton2Label;
+    
+    __weak IBOutlet UILabel *tpChoosePartyLabel;
+    __weak IBOutlet UIButton *tpChoosePartyButton;
+    
+    __weak IBOutlet UIButton *detailButton;
+    __weak IBOutlet UIButton *sendDataButton;
+    
+    //--Tax Zero
+    __weak IBOutlet UILabel *zHeaderLabel;
+    __weak IBOutlet UILabel *zAmountHLabel;
+    __weak IBOutlet UILabel *zAmountLabel;
+    
+}
+@property (nonatomic,strong) NSMutableArray *formsArray;
+@property (nonatomic,strong) NSMutableDictionary *sharedData;
+
+- (IBAction)choosePartyClicked:(UIButton *)sender;
+- (IBAction)taxDetailClicked:(id)sender;
+- (IBAction)sendTaxClicked:(id)sender;
+
+- (IBAction)party1Clicked:(id)sender;
+- (IBAction)party2Clicked:(id)sender;
+
+- (IBAction)back1Clicked:(id)sender;
+- (IBAction)back2Clicked:(id)sender;
+
+- (IBAction)tpButton1Clicked:(UIButton *)sender;
+- (IBAction)tpButton2Clicked:(UIButton *)sender;
+
+@end
