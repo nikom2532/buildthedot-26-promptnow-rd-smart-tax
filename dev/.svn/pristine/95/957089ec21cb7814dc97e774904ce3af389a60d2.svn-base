@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--     <item android:state_enabled="true" android:color="#000000"/> -->
+<!--     pressed -->
+<!--     <item android:state_focused="true" android:color="#000000"/> -->
+<!--     <item android:state_selected="true" android:color="@color/blue"></item> -->
+<!--     focused -->
+<!--     <item android:color="#000000"/> -->
+<!--     default -->
+	
+	  <item android:drawable="@drawable/btn_switch_left_active" android:color="@android:color/white" android:state_enabled="false"></item>
+    <item android:drawable="@drawable/btn_switch_left_inactive"   android:color="@color/color_bar_top"  android:state_enabled="true"></item>
+</selector>
