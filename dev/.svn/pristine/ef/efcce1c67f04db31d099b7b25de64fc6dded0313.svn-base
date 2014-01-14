@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.revenuedepartment.app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <com.revenuedepartment.customview.TopBar
+        android:id="@+id/Topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Topbar"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.revenuedepartment.customview.ButtonCustom
+                android:id="@+id/btForm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_print_left_selector"
+                android:text="@string/label_print_th"
+                android:textColor="@drawable/btn_print_left_text_selector"
+                android:textSize="20dp"
+                custom:textstyle="bold" >
+            </com.revenuedepartment.customview.ButtonCustom>
+
+            <com.revenuedepartment.customview.ButtonCustom
+                android:id="@+id/btReceipt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_print_right_selector"
+                android:text="@string/label_receip_th"
+                android:textColor="@drawable/btn_print_right_text_selector"
+                android:textSize="20dp"
+                custom:textstyle="bold" >
+            </com.revenuedepartment.customview.ButtonCustom>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <com.revenuedepartment.customview.ButtonCustom
+                android:id="@+id/btLeft"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_print_left_selector"
+                android:textColor="@drawable/btn_print_left_text_selector"
+                android:textSize="20dp"
+                custom:textstyle="bold" >
+            </com.revenuedepartment.customview.ButtonCustom>
+
+            <com.revenuedepartment.customview.ButtonCustom
+                android:id="@+id/btRight1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_print_right_selector"
+                android:textColor="@drawable/btn_print_right_text_selector"
+                android:textSize="20dp"
+                custom:textstyle="bold" >
+            </com.revenuedepartment.customview.ButtonCustom>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvFormReceipt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+    </LinearLayout>
+
+  
+
+</RelativeLayout>

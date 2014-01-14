@@ -1,0 +1,31 @@
+//
+//  NewsView.m
+//  RDSmartTax
+//
+//  Created by fone on 1/14/57 BE.
+//  Copyright (c) 2557 RevenueDepartment. All rights reserved.
+//
+
+#import "NewsView.h"
+
+@implementation NewsView
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        // Initialization code
+    }
+    return self;
+}
+
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect
+{
+    // Drawing code
+}
+*/
+
+@end
