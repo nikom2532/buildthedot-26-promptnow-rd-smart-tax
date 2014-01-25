@@ -1,4 +1,4 @@
-﻿{
+{
     "message_version": "1.0.1",
     "message_error": [
 {
@@ -32,12 +32,12 @@
 },
 {
     "validate_field": "oldPasswordEmpty",
-    "message_th":"กรุณาระบุรหัสผ่านเก่า",
+    "message_th":"กรุณาระบุรหัสผ่านเดิม",
     "message_en":"Please specify old password"
 },
 {
     "validate_field": "oldPasswordWrong",
-    "message_th":"รหัสผ่านเก่าไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+    "message_th":"รหัสผ่านเดิมไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
     "message_en":"Old password is incorrect. Please specify again"
 },
 {
@@ -52,18 +52,23 @@
 },
 {
     "validate_field": "confirmPasswordEmpty",
-    "message_th":"กรุณายืนยันรหัสผ่านใหม่",
+    "message_th":"กรุณาระบุยืนยันรหัสผ่านใหม่",
     "message_en":"Please specify confirm password"
 },
 {
     "validate_field": "confirmPasswordWrong",
-    "message_th":"ยืนยันรหัสผ่านไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+    "message_th":"ยืนยันรหัสผ่านใหม่ไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
     "message_en":"Confirm password is incorrect. Please specify again"
 },
 {
     "validate_field": "birthDateEmpty",
     "message_th":"กรุณาระบุวันเดือนปีเกิด",
     "message_en":"Please specify birthday"
+},
+{
+    "validate_field": "birthDateWrong",
+    "message_th":"วันเดือนปีเกิดไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+    "message_en":"Birthday is incorrect. Please specify again"
 },
 {
     "validate_field": "questionIdEmpty",
@@ -149,7 +154,12 @@
 	"validate_field": "postcodeEmpty",
     "message_th":  "กรุณาระบุรหัสไปรษณีย์",
     "message_en":"Please specify postal code"
-},                 
+},
+{
+"validate_field": "sendEmaiSuccess",
+"message_th":  "ส่งอีเมลสำเร็จ",
+"message_en":"Send email success"
+},
 {
 	"validate_field": "emailEmpty",
     "message_th":  "กรุณาระบุอีเมล",
@@ -291,11 +301,6 @@
     "message_en": "You have transfered PND 91 form in tax year YYYY through electronic system"
 }, 
 {
-	"validate_field": "saveTemplate",
-    "message_th":  "ต้องการจัดเก็บเป็น Template ยื่นภาษีเพื่อใช้ในการยื่นภาษีครั้งต่อไปหรือไม่",
-    "message_en": "Would you like to save this template for efiling next year?"
-},
-{
 	"validate_field": "cancelPnd91",
     "message_th":  "ท่านต้องการยกเลิกแบบหรือไม่",
     "message_en": "Would you like to reject the form"
@@ -324,6 +329,11 @@
 	"validate_field": "logout",
     "message_th": "คุณต้องการออกจากระบบหรือไม่",
     "message_en": "Would you like to logout?"
+},
+{
+	"validate_field": "noInternetConnection",
+    "message_th": "ไม่พบสัญญาณ Internet กรุณาเชื่อมต่อสัญญาณ Internet ก่อนการใช้ระบบ",
+    "message_en": "Sorry, There is no internet connection. Please connect to internet before using"
 }
 ]
 }

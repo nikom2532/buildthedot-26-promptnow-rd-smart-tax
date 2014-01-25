@@ -1,0 +1,270 @@
+{
+	"message_version": "1.0.1",
+	"message_error": [
+		{
+			"validate_field": "nidEmpty",
+			"message_th": "กรุณาระบุเลขประจำตัวประชาชน",
+			"message_en": "Please specify national id"
+		}, {
+			"validate_field": "nidWrong",
+			"message_th": "เลขประจำตัวประชาชนไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "National id is incorrect. Please specify again"
+		}, {
+			"validate_field": "passwordEmpty",
+			"message_th": "กรุณาระบุรหัสผ่าน",
+			"message_en": "Please specify password"
+		}, {
+			"validate_field": "passwordWrong",
+			"message_th": "รหัสผ่านไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "Password is incorrect. Please specify again"
+		}, {
+			"validate_field": "passwordNotEqual",
+			"message_th": "รหัสผ่านไม่ตรงกัน กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "Password is not same. Please specify again"
+		}, {
+			"validate_field": "oldPasswordEmpty",
+			"message_th": "กรุณาระบุรหัสผ่านเดิม",
+			"message_en": "Please specify old password"
+		}, {
+			"validate_field": "oldPasswordWrong",
+			"message_th": "รหัสผ่านเดิมไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "Old password is incorrect. Please specify again"
+		}, {
+			"validate_field": "newPasswordEmpty",
+			"message_th": "กรุณาระบุรหัสผ่านใหม่",
+			"message_en": "Please specify new password"
+		}, {
+			"validate_field": "newPasswordWrong",
+			"message_th": "รหัสผ่านใหม่ไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "New password is incorrect. Please specify again"
+		}, {
+			"validate_field": "confirmPasswordEmpty",
+			"message_th": "กรุณาระบุยืนยันรหัสผ่านใหม่",
+			"message_en": "Please specify confirm password"
+		}, {
+			"validate_field": "confirmPasswordWrong",
+			"message_th": "ยืนยันรหัสผ่านใหม่ไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "Confirm password is incorrect. Please specify again"
+		}, {
+			"validate_field": "birthDateEmpty",
+			"message_th": "กรุณาระบุวันเดือนปีเกิด",
+			"message_en": "Please specify birthday"
+		}, {
+			"validate_field": "birthDateWrong",
+			"message_th": "วันเดือนปีเกิดไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "Birthday is incorrect. Please specify again"
+		}, {
+			"validate_field": "questionIdEmpty",
+			"message_th": "กรุณาระบุคำถาม",
+			"message_en": "Please specify question"
+		}, {
+			"validate_field": "answerEmpty",
+			"message_th": "กรุณาระบุคำตอบ",
+			"message_en": "Please specify answer"
+		}, {
+			"validate_field": "passportNoEmpty",
+			"message_th": "กรุณาระบุเลขที่หนังสือเดินทาง",
+			"message_en": "Please specify passport number"
+		}, {
+			"validate_field": "passportNoWrong",
+			"message_th": "เลขที่หนังสือเดินทางไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "Passport number is incorrect. Please specify again"
+		}, {
+			"validate_field": "titleNameEmpty",
+			"message_th": "กรุณาระบุคำนำหน้าชื่อ",
+			"message_en": "Please specify title name"
+		}, {
+			"validate_field": "nameEmpty",
+			"message_th": "กรุณาระบุชื่อ",
+			"message_en": "Please specify name"
+		}, {
+			"validate_field": "surnameEmpty",
+			"message_th": "กรุณาระบุชื่อสกุล",
+			"message_en": "Please specify surname"
+		}, {
+			"validate_field": "fatherNameEmpty",
+			"message_th": "กรุณาระบุชื่อและชื่อสกุลบิดา",
+			"message_en": "Please specify father's name and surname"
+		}, {
+			"validate_field": "motherNameEmpty",
+			"message_th": "กรุณาระบุชื่อและชื่อสกุลมารดา",
+			"message_en": "Please specify mother's name and surname"
+		}, {
+			"validate_field": "countryCodeEmpty",
+			"message_th": "กรุณาระบุประเทศ",
+			"message_en": "Please specify country"
+		}, {
+			"validate_field": "contractNoEmpty",
+			"message_th": "กรุณาระบุหมายเลขโทรศัพท์มือถือ",
+			"message_en": "Please specify mobile number"
+		}, {
+			"validate_field": "contractNoWrong",
+			"message_th": "หมายเลขโทรศัพท์มือถือไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "Mobile number is incorrect. Please specify again"
+		}, {
+			"validate_field": "addressNoEmpty",
+			"message_th": "กรุณาระบุบ้านเลขที่",
+			"message_en": "Please specify address number"
+		}, {
+			"validate_field": "tambolEmpty",
+			"message_th": "กรุณาระบุตำบล",
+			"message_en": "Please specify tambol"
+		}, {
+			"validate_field": "amphurEmpty",
+			"message_th": "กรุณาระบุอำเภอ",
+			"message_en": "Please specify amphur"
+		}, {
+			"validate_field": "provinceEmpty",
+			"message_th": "กรุณาระบุจังหวัด",
+			"message_en": "Please specify province"
+		}, {
+			"validate_field": "postcodeEmpty",
+			"message_th": "กรุณาระบุรหัสไปรษณีย์",
+			"message_en": "Please specify postal code"
+		}, {
+			"validate_field": "sendEmaiSuccess",
+			"message_th": "ส่งอีเมลสำเร็จ",
+			"message_en": "Send email success"
+		}, {
+			"validate_field": "emailEmpty",
+			"message_th": "กรุณาระบุอีเมล",
+			"message_en": "Please specify email"
+		}, {
+			"validate_field": "emailWrong",
+			"message_th": "อีเมลไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "Email is incorrect. Please specify again"
+		}, {
+			"validate_field": "taxpayerStatusEmpty",
+			"message_th": "กรุณาเลือกสถานภาพผู้มีเงินได้",
+			"message_en": "Please specify tax payer status"
+		}, {
+			"validate_field": "txpFatherPinEmpty",
+			"message_th": "กรุณาระบุเลขประจำตัวประชาชนบิดาผู้มีเงินได้",
+			"message_en": "Please specify tax payer father's national id"
+		}, {
+			"validate_field": "txpFatherPinWrong",
+			"message_th": "เลขประจำตัวประชาชนบิดาผู้มีเงินได้ไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "Tax payer father's national id is incorrect. Please specify again"
+		}, {
+			"validate_field": "txpMotherPinEmpty",
+			"message_th": "กรุณาระบุเลขประจำตัวประชาชนมารดาผู้มีเงินได้",
+			"message_en": "Please specify tax payer mother's national id"
+		}, {
+			"validate_field": "txpMotherPinWrong",
+			"message_th": "เลขประจำตัวประชาชนมารดาผู้มีเงินได้ไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "Tax payer mother's national id is incorrect. Please specify again"
+		}, {
+			"validate_field": "childNoStudyEmpty",
+			"message_th": "กรุณาระบุจำนวนบุตรไม่ศึกษา",
+			"message_en": "Please specify number of child not study"
+		}, {
+			"validate_field": "childStudyEmpty",
+			"message_th": "กรุณาระบุจำนวนบุตรศึกษา",
+			"message_en": "Please specify number of child study"
+		}, {
+			"validate_field": "marryStatusEmpty",
+			"message_th": "กรุณาเลือกสถานะการสมรส",
+			"message_en": "Please specify marry status"
+		}, {
+			"validate_field": "spouseStatusEmpty",
+			"message_th": "กรุณาเลือกสถานะคู่สมรส",
+			"message_en": "Please specify spouse status"
+		}, {
+			"validate_field": "spouseNidEmpty",
+			"message_th": "กรุณาระบุเลขประจำตัวประชาชนคู่สมรส",
+			"message_en": "Please specify spouse' national id"
+		}, {
+			"validate_field": "spouseNidWrong",
+			"message_th": "เลขประจำประชาชนคู่สมรสไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "Please specify spouse' national id"
+		}, {
+			"validate_field": "spouseBirthDateEmpty",
+			"message_th": "กรุณาระบุวันเดือนปีเกิดคู่สมรส",
+			"message_en": "Please specify Spouse birthday"
+		}, {
+			"validate_field": "spouseNameEmpty",
+			"message_th": "กรุณาระบุชื่อคู่สมรส (ไม่ต้องระบุคำนำหน้าชื่อ)",
+			"message_en": "Please specify spouse's name"
+		}, {
+			"validate_field": "spouseSurnameEmpty",
+			"message_th": "กรุณาระบุชื่อสกุลคู่สมรส",
+			"message_en": "Please specify spouse's surname"
+		}, {
+			"validate_field": "spousePassportNoEmpty",
+			"message_th": "กรุณาระบุเลขที่หนังสือเดินทางคู่สมรส",
+			"message_en": "Please specify spouse's passport number"
+		}, {
+			"validate_field": "spousePassportNoWrong",
+			"message_th": "เลขที่หนังสือเดินทางคู่สมรสไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "Spouse's passport number is incorrect. Please specify again"
+		}, {
+			"validate_field": "spouseCountryCodeEmpty",
+			"message_th": "กรุณาระบุประเทศคู่สมรส",
+			"message_en": "Please specify spouse's country"
+		}, {
+			"validate_field": "spouseFatherPinEmpty",
+			"message_th": "กรุณาระบุเลขประจำตัวประชาชนบิดาคู่สมรส",
+			"message_en": "Please specify spouse father's national id"
+		}, {
+			"validate_field": "spouseFatherPinWrong",
+			"message_th": "เลขประจำตัวประชาชนบิดาคู่สมรสไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "Spouse father's national id is incorrect. Please specify again"
+		}, {
+			"validate_field": "spouseMotherPinEmpty",
+			"message_th": "กรุณาระบุเลขประจำตัวประชาชนมารดาคู่สมรส",
+			"message_en": "Please specify spouse mother's national id"
+		}, {
+			"validate_field": "spouseMotherPinWrong",
+			"message_th": "เลขประจำตัวประชาชนมารดาคู่สมรสไม่ถูกต้อง กรุณาระบุใหม่อีกครั้ง",
+			"message_en": "Spouse mother's national id is incorrect. Please specify again"
+		}, {
+			"validate_field": "transactionComplete",
+			"message_th": "ทำรายการสำเร็จ",
+			"message_en": "Process is complete"
+		}, {
+			"validate_field": "confirmPnd91",
+			"message_th": "ยืนยันการนำส่งข้อมูล แบบ ภ.ง.ด. 91",
+			"message_en": "Confirm transfer PND 91 form"
+		}, {
+			"validate_field": "pnd91CompleteSendingSMS",
+			"message_th": "การยื่นแบบเสร็จสมบูรณ์ ท่านจะได้รับ SMS แจ้งผลการคืนเงินส่งไปที่เบอร์ 0x-xxxx-xxxx",
+			"message_en": "Efiling process is complete. You will receive SMS result oftax refund at 0x-xxxx-xxxx"
+		}, {
+			"validate_field": "thanksSatisfy",
+			"message_th": "ขอบคุณที่แสดงความพึงพอใจ RD Smart Tax",
+			"message_en": "Thank you for satisfy RD Smart Tax"
+		}, {
+			"validate_field": "pnd91Success",
+			"message_th": "ท่านได้ยื่นแบบ ภ.ด.ง. 91 ปีภาษี YYYY ผ่านระบบอิเล็กทรอนิคส์เรียบร้อยแล้ว",
+			"message_en": "You have transfered PND 91 form in tax year YYYY through electronic system"
+		}, {
+			"validate_field": "cancelPnd91",
+			"message_th": "ท่านต้องการยกเลิกแบบหรือไม่",
+			"message_en": "Would you like to reject the form"
+		}, {
+			"validate_field": "cancelPnd91Success",
+			"message_th": "ยกเลิกแบบสำเร็จ",
+			"message_en": "Reject the form is succesful"
+		}, {
+			"validate_field": "cancelPnd91Fail",
+			"message_th": "ยกเลิกแบบไม่สำเร็จ",
+			"message_en": "Reject the form is unsuccessful"
+		}, {
+			"validate_field": "oldVersion",
+			"message_th": "เวอร์ชันไม่อัพเดท กรุณาอัพเดทเวอร์ชันใหม่",
+			"message_en": "Version is not up-to-date. Please upgrade to new version"
+		}, {
+			"validate_field": "fileDuplicate",
+			"message_th": "รายการถูกบันทึกแล้ว",
+			"message_en": "The file has already save in this device"
+		}, {
+			"validate_field": "logout",
+			"message_th": "คุณต้องการออกจากระบบหรือไม่",
+			"message_en": "Would you like to logout?"
+		}, {
+			"validate_field": "noInternetConnection",
+			"message_th": "ไม่พบสัญญาณ Internet กรุณาเชื่อมต่อสัญญาณ Internet ก่อนการใช้ระบบ",
+			"message_en": "Sorry, There is no internet connection. Please connect to internet before using"
+		}
+	]
+}

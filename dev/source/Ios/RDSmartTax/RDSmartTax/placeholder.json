@@ -1,0 +1,178 @@
+{
+	"placeholder_version": "1.0.1",
+	"placeholder": [
+                    {
+                    "placeholder_name": "password",
+                    "placeholder_th": "8 ตัวอักษร",
+                    "placeholder_en": "Eight characters"
+                    }, {
+                    "placeholder_name": "confirmPassowrd",
+                    "placeholder_th": "ยืนยันรหัสผ่าน",
+                    "placeholder_en": "Please specify confirm passowrd as same as confirm password"
+                    },{
+                    "placeholder_name": "oldPassowrd",
+                    "placeholder_th": "รหัสผ่านเดิม",
+                    "placeholder_en": "Please specify confirm passowrd as same as confirm password"
+                    },{
+                    "placeholder_name": "newPassword",
+                    "placeholder_th": "รหัสผ่านใหม่",
+                    "placeholder_en": "Please specify confirm passowrd as same as confirm password"
+                    },{
+                    "placeholder_name": "email",
+                    "placeholder_th": "กรุณาระบุอีเมล",
+                    "placeholder_en": "Please specify email"
+                    }, {
+                    "placeholder_name": "birthDate",
+                    "placeholder_th": "กรุณาเลือกวันเดือนปีเกิด",
+                    "placeholder_en": "Please specify birthday"
+                    }, {
+                    "placeholder_name": "question",
+                    "placeholder_th": "กรุณาเลือกคำถาม",
+                    "placeholder_en": "Please specify question"
+                    }, {
+                    "placeholder_name": "answer",
+                    "placeholder_th": "กรุณาระบุคำตอบ",
+                    "placeholder_en": "Please specify answer"
+                    }, {
+                    "placeholder_name": "passportNo",
+                    "placeholder_th": "กรุณาระบุเลขหนังสือเดินทาง",
+                    "placeholder_en": "Please specify passport number"
+                    }, {
+                    "placeholder_name": "name",
+                    "placeholder_th": "กรุณาระบุชื่อ",
+                    "placeholder_en": "Please specify name"
+                    }, {
+                    "placeholder_name": "middleName",
+                    "placeholder_th": "กรุณาระบุชื่อกลาง",
+                    "placeholder_en": "Please specify middle name"
+                    }, {
+                    "placeholder_name": "surname",
+                    "placeholder_th": "กรุณาระบุชื่อสกุล",
+                    "placeholder_en": "Please specify surname"
+                    }, {
+                    "placeholder_name": "fatherName",
+                    "placeholder_th": "กรุณาระบุชื่อและชื่อสกุล",
+                    "placeholder_en": "Please specify name and surname"
+                    }, {
+                    "placeholder_name": "motherName",
+                    "placeholder_th": "กรุณาระบุชื่อและชื่อสกุล",
+                    "placeholder_en": "Please specify name and surname"
+                    }, {
+                    "placeholder_name": "countryCode",
+                    "placeholder_th": "กรุณาระบุประเทศ",
+                    "placeholder_en": "Please specify country"
+                    }, {
+                    "placeholder_name": "contractNo",
+                    "placeholder_th": "กรุณาระบุหมายเลขโทรศัพท์มือถือ",
+                    "placeholder_en": "Please specify mobile number"
+                    }, {
+                    "placeholder_name": "buildName",
+                    "placeholder_th": "กรุณาระบุชื่ออาคาร",
+                    "placeholder_en": "Please specify building name"
+                    }, {
+                    "placeholder_name": "roomNo",
+                    "placeholder_th": "กรุณาระบุเลขที่ห้อง",
+                    "placeholder_en": "Please specify room number"
+                    }, {
+                    "placeholder_name": "floorNo",
+                    "placeholder_th": "กรุณาระบุเลขที่ชั้น",
+                    "placeholder_en": "Please specify floor number"
+                    }, {
+                    "placeholder_name": "addressNo",
+                    "placeholder_th": "กรุณาระบุบ้านเลขที่",
+                    "placeholder_en": "Please specify address number"
+                    }, {
+                    "placeholder_name": "soi",
+                    "placeholder_th": "กรุณาระบุตรอก / ซอย",
+                    "placeholder_en": "Please specify soi"
+                    }, {
+                    "placeholder_name": "village",
+                    "placeholder_th": "กรุณาระบุชื่อหมู่บ้าน",
+                    "placeholder_en": "Please village name"
+                    }, {
+                    "placeholder_name": "mooNo",
+                    "placeholder_th": "กรุณาระบุเลขหมู่",
+                    "placeholder_en": "Please moo number"
+                    }, {
+                    "placeholder_name": "street",
+                    "placeholder_th": "กรุณาระบุชื่อถนน",
+                    "placeholder_en": "Please street name"
+                    }, {
+                    "placeholder_name": "tambol",
+                    "placeholder_th": "กรุณาระบุชื่อตำบล / แขวง",
+                    "placeholder_en": "Please specify tambol name"
+                    }, {
+                    "placeholder_name": "amphur",
+                    "placeholder_th": "กรุณาระบุชื่ออำเภอ / เขต",
+                    "placeholder_en": "Please specify amphur name"
+                    }, {
+                    "placeholder_name": "province",
+                    "placeholder_th": "กรุณาระบุชื่อจังหวัด",
+                    "placeholder_en": "Please specify province"
+                    }, {
+                    "placeholder_name": "postcode",
+                    "placeholder_th": "กรุณาระบุรหัสไปรษณีย์",
+                    "placeholder_en": "Please specify postal code"
+                    }, {
+                    "placeholder_name": "taxpayerStatus",
+                    "placeholder_th": "กรุณาเลือกสถานภาพผู้มีเงินได้",
+                    "placeholder_en": "Please specify tax payer status"
+                    }, {
+                    "placeholder_name": "txpFatherPin",
+                    "placeholder_th": "กรุณาระบุเลขประจำตัวประชาชนบิดาผู้มีเงินได้",
+                    "placeholder_en": "Please specify tax payer father's national id"
+                    }, {
+                    "placeholder_name": "txpMotherPin",
+                    "placeholder_th": "กรุณาระบุเลขประจำตัวประชาชนมารดาผู้มีเงินได้",
+                    "placeholder_en": "Please specify tax payer mother's national id"
+                    }, {
+                    "placeholder_name": "childStudy",
+                    "placeholder_th": "กรุณาระบุจำนวนบุตรศึกษา",
+                    "placeholder_en": "Please specify number of child study"
+                    }, {
+                    "placeholder_name": "childNoStudy",
+                    "placeholder_th": "กรุณาระบุจำนวนบุตรไม่ศึกษา",
+                    "placeholder_en": "Please specify number of child not study"
+                    }, {
+                    "placeholder_name": "marryStatus",
+                    "placeholder_th": "กรุณาเลือกสถานะการสมรส",
+                    "placeholder_en": "Please specify marry status"
+                    }, {
+                    "placeholder_name": "spouseStatus",
+                    "placeholder_th": "กรุณาเลือกสถานะคู่สมรส",
+                    "placeholder_en": "Please specify spouse status"
+                    }, {
+                    "placeholder_name": "spouseNid",
+                    "placeholder_th": "กรุณาระบุเลขประจำตัวประชาชนคู่สมรส",
+                    "placeholder_en": "Please specify spouse' national id"
+                    }, {
+                    "placeholder_name": "spouseBirthDate",
+                    "placeholder_th": "กรุณาระบุวันเดือนปีเกิดคู่สมรส",
+                    "placeholder_en": "Please specify Spouse birthday"
+                    }, {
+                    "placeholder_name": "spouseName",
+                    "placeholder_th": "กรุณาระบุชื่อคู่สมรส",
+                    "placeholder_en": "Please specify spouse's name"
+                    }, {
+                    "placeholder_name": "spouseSurname",
+                    "placeholder_th": "กรุณาระบุชื่อสกุลคู่สมรส",
+                    "placeholder_en": "Please specify spouse's surname"
+                    }, {
+                    "placeholder_name": "spousePassportNo",
+                    "placeholder_th": "กรุณาระบุเลขหนังสือเดินทางคู่สมรส",
+                    "placeholder_en": "Please specify spouse's passport number"
+                    }, {
+                    "placeholder_name": "spouseCountryCode",
+                    "placeholder_th": "กรุณาเลือกประเทศคู่สมรส",
+                    "placeholder_en": "Please specify spouse's country"
+                    }, {
+                    "placeholder_name": "spouseFatherPin",
+                    "placeholder_th": "กรุณาระบุเลขประจำตัวประชาชนบิดาคู่สมรส",
+                    "placeholder_en": "Please specify spouse father's national id"
+                    }, {
+                    "placeholder_name": "spouseMotherPin",
+                    "placeholder_th": "กรุณาระบุเลขประจำตัวประชาชนมารดาคู่สมรส",
+                    "placeholder_en": "Please specify spouse mother's national id"
+                    }
+                    ]
+}

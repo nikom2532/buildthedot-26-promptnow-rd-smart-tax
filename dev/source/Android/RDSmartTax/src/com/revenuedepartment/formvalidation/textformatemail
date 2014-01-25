@@ -1,0 +1,47 @@
++(NSString*) formatEmailMask:(NSString*) source {
+    
+    NSArray *allTextArray = [source componentsSeparatedByString:@"@"];
+    NSString *username = [allTextArray objectAtIndex:0];
+    NSArray *subTextArray = [[allTextArray objectAtIndex:1] componentsSeparatedByString:@"."];
+    NSString *host;
+    NSString *com1;
+    NSString *com2;
+   
+    int subtextNo = subTextArray.count;
+    if(subtextNo == 2){
+        host = [subTextArray objectAtIndex:0];
+        com1  = [subTextArray objectAtIndex:1];
+    }else{
+        host = [subTextArray objectAtIndex:0];
+        com1  = [subTextArray objectAtIndex:1];
+        com2  = [subTextArray objectAtIndex:2];
+    }
+    
+    //-- username
+    NSString *un1 = [username substringToIndex:2];
+    NSString *un2 = [username substringWithRange:NSMakeRange(2, [username length]-4)];
+    NSString *un3 = [username substringFromIndex:[username length]-2];
+    
+    NSMutableString* unMask = [NSMutableString string];
+    for (int i=0; i<[un2 length]; i++){
+        [unMask appendString:@"*"];
+    }
+    un2 = unMask;
+    
+    //-- host
+    NSString *ho1 = [host substringToIndex:1];
+    NSString *ho2 = [host substringFromIndex:1];
+    
+    NSMutableString* hoMask = [NSMutableString string];
+    for (int i=0; i<[ho2 length]; i++){
+        [hoMask appendString:@"*"];
+    }
+    ho2 = hoMask;
+    
+    //-- merge new string
+    if(subtextNo == 2){
+        return [NSString stringWithFormat:@"%@%@%@@%@%@.%@",un1,un2,un3,ho1,ho2,com1];
+    }else{
+        return [NSString stringWithFormat:@"%@%@%@@%@%@.%@.%@",un1,un2,un3,ho1,ho2,com1,com2];
+    }
+}
