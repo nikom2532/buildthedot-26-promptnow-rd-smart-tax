@@ -1,0 +1,54 @@
+{
+	"question_version": "1.0.1",
+	"question_list": [
+		{
+			"question_id": "1",
+			"question_th": "สถานที่เกิดของท่านคือที่ใด",
+			"question_en": "Where is your birth place?"
+		}, {
+			"question_id": "2",
+			"question_th": "สถานที่ใดที่ท่านชอบไปมากที่สุด",
+			"question_en": "Where is your favourite place"
+		}, {
+			"question_id": "3",
+			"question_th": "ท่านพบกับคู่สมรสของท่านครั้งแรกที่ใด",
+			"question_en": "Where did you first meet your spouse?"
+		}, {
+			"question_id": "4",
+			"question_th": "โรงเรียนแรกของท่านชื่ออะไร",
+			"question_en": "What is the name of your first school?"
+		}, {
+			"question_id": "5",
+			"question_th": "สัญลักษณ์ของโรงเรียนมัธยมของท่านคืออะไร",
+			"question_en": "What is the emblem of your high school?"
+		}, {
+			"question_id": "6",
+			"question_th": "ใครคือผู้ที่ท่านชื่นชอบมากที่สุด",
+			"question_en": "Who is your favourite person?"
+		}, {
+			"question_id": "7",
+			"question_th": "สัตว์เลี้ยงตัวโปรดของท่านชื่ออะไร",
+			"question_en": "What is the name of your favourite pet?"
+		}, {
+			"question_id": "8",
+			"question_th": "กีฬาที่ท่านโปรดปรานที่สุดคืออะไร",
+			"question_en": "What is your favourite sport?"
+		}, {
+			"question_id": "9",
+			"question_th": "ทีมกีฬาใดที่ท่านชอบมากที่สุด",
+			"question_en": "What is your favourite sport team?"
+		}, {
+			"question_id": "10",
+			"question_th": "ท่านชอบสีอะไรมากที่สุด",
+			"question_en": "What is your favourite color?"
+		}, {
+			"question_id": "11",
+			"question_th": "งานอดิเรกที่ท่านชอบมากที่สุดคืออะไร",
+			"question_en": "What is your favourite hobby?"
+		}, {
+			"question_id": "12",
+			"question_th": "รถยนต์หรือจักรยานคันแรกของท่านยี่ห้ออะไร",
+			"question_en": "What is the brand  of your first car/bicycle?"
+		}
+	]
+}
