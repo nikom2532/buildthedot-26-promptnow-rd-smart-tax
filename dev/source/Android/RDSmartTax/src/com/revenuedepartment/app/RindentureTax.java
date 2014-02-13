@@ -1,0 +1,54 @@
+package com.revenuedepartment.app;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+
+import com.promptnow.network.model.CommonRequestRD;
+import com.revenuedepartment.customview.TextViewCustom;
+import com.revenuedepartment.customview.TopBar;
+import com.revenuedepartment.service.SharedPref;
+
+public class RindentureTax extends Activity implements OnClickListener {
+
+	TextViewCustom tvhead_rindenture_tax,tvtitle_rindenture_tax;
+	TopBar topBar;
+	SharedPref pref;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		pref = new SharedPref(RindentureTax.this);
+		setView();
+
+	}
+
+	private void setView() {
+		CommonRequestRD.LANG = "th";
+		setContentView(R.layout.rindenture_tax);
+		tvhead_rindenture_tax= (TextViewCustom) findViewById(R.id.tvhead_rindenture_tax);
+		tvhead_rindenture_tax.setText(R.string.tvheadrindentureTax);
+		tvtitle_rindenture_tax = (TextViewCustom) findViewById(R.id.tvtitle_rindenture_tax);
+		tvtitle_rindenture_tax.setText(R.string.tvtitlerindentureTax);
+		topBar = (TopBar) findViewById(R.id.Topbar);
+		topBar.setTitle(getString(R.string.label_suggestion_topic));
+//		tvhead_rindenture_tax.setText(ReadTextFromFile.readTxt(RindentureTax.this, R.raw.head_rindenture_tax));
+//		tvtitle_rindenture_tax.setText(ReadTextFromFile.readTxt(RindentureTax.this, R.raw.title_rindenture_tax));
+	}
+	
+	
+
+
+	@Override
+	public void onClick(View v) {}
+
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		setResult(99);
+		finish();
+	}
+}

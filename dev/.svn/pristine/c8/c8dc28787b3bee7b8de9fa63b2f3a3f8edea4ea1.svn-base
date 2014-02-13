@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.revenuedepartment.app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <com.revenuedepartment.customview.TopBar
+        android:id="@+id/Topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Topbar"
+        android:fillViewport="false"
+        android:isScrollContainer="false"
+        android:measureAllChildren="false"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Topbar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <com.revenuedepartment.customview.TextViewCustom
+                android:id="@+id/tvhead_rindenture_tax"
+                style="@style/label_black_30dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <com.revenuedepartment.customview.TextViewCustom
+                android:id="@+id/tvtitle_rindenture_tax"
+                style="@style/label_black_25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
