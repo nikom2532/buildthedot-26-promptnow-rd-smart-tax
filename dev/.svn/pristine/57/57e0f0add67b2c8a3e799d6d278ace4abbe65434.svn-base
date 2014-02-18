@@ -1,114 +1,0 @@
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.<<<<<<< .mine
-=======
->>>>>>> .r665
-    -->
-    <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.<<<<<<< .mine
-=======
->>>>>>> .r665
-        -->
-    </style>
-
-    <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-    </style>
-
-    <style name="fontTopicProfile">
-        <item name="android:textSize">20sp</item>
-        <item name="android:textColor">#000</item>
-    </style>
-
-    <style name="fontMessageStatus">
-        <item name="android:textSize">20sp</item>
-        <item name="android:textColor">#000</item>
-    </style>
-
-    <style name="fontTitleMainEfillinTopbarName">
-        <item name="android:textSize">25sp</item>
-        <item name="android:textColor">@color/color_white</item>
-    </style>
-    <style name="fontTitleMainEfillinTopbarDateTime">
-        <item name="android:textSize">20sp</item>
-        <item name="android:textColor">@color/color_white</item>
-    </style>
-    
-    <style name="fontTitleMainEfillin">
-        <item name="android:textSize">25sp</item>
-        <item name="android:textColor">@color/color_gray</item>
-    </style>
-    
-    <style name="fontTitleMainEfillin_print">
-        <item name="android:textSize">39sp</item>
-        <item name="android:textColor">@color/color_gray</item>
-    </style>
-
-    <style name="label_gray_20dp">
-        <item name="android:textSize">20sp</item>
-        <item name="android:textColor">@color/color_gray</item>
-    </style>
-
-    <style name="label_gray_25dp">
-        <item name="android:textSize">25sp</item>
-        <item name="android:textColor">@color/color_gray</item>
-    </style>
-
-    <style name="label_black_25dp">
-        <item name="android:textSize">25sp</item>
-        <item name="android:textColor">@color/color_black</item>
-    </style>
-
-    <style name="label_black_23dp">
-        <item name="android:textSize">23sp</item>
-        <item name="android:textColor">@color/color_black</item>
-    </style>
-
-    <style name="label_black_20dp">
-        <item name="android:textSize">20sp</item>
-        <item name="android:textColor">@color/color_black</item>
-    </style>
-    
-    <style name="label_blue_20dp">
-        <item name="android:textSize">20sp</item>
-        <item name="android:textColor">@color/color_blue</item>
-    </style>
-
-    <style name="label_blue_25dp">
-        <item name="android:textSize">25sp</item>
-        <item name="android:textColor">@color/color_blue</item>
-    </style>
-
-    <style name="label_black_30dp">
-        <item name="android:textSize">30sp</item>
-        <item name="android:textColor">@color/color_black</item>
-    </style>
-
-    <style name="label_black_40dp">
-        <item name="android:textSize">40sp</item>
-        <item name="android:textColor">@color/color_black</item>
-    </style>
-
-    <style name="label_while_30dp">
-        <item name="android:textSize">30dp</item>
-        <item name="android:textColor">@color/color_white</item>
-    </style>
-
-    <style name="label_gray_25_bold">
-        <item name="android:textSize">25sp</item>
-        <item name="android:textColor">@color/color_gray_dark</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="label_gray_22">
-        <item name="android:textSize">22sp</item>
-        <item name="android:textColor">@color/color_gray</item>
-    </style>
-
-</resources>
